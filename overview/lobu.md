@@ -1,6 +1,6 @@
 ## What you get
 
-A Lobu page in the bb sidebar with five cards, grouped by workspace:
+A Lobu page in the bb sidebar covering every workspace your `lobu` CLI logins reach. Workspace chips at the top narrow it to one workspace. Five cards, grouped by workspace:
 
 - **Needs you**: pending approvals and Automations that are due. Identical requests collapse into one row ("36 approvals waiting") that links to all of them.
 - **Failed runs**: Automation and feed failures from the last 24 hours. Failed ad-hoc agent tool calls are left out.
@@ -27,7 +27,7 @@ The plugin reuses your `lobu` CLI login and makes one read-only `query_sdk` call
 
 ## Requirements
 
-Install the Lobu CLI with `npm install -g @lobu/cli` and run `lobu login`. A login covers the workspaces you authorized; add more with `lobu context add <name> --url https://app.lobu.ai/api/v1` and `lobu login --context <name>`, then list the contexts in the plugin settings.
+Install the Lobu CLI with `npm install -g @lobu/cli` and run `lobu login`. Every login appears automatically and covers the workspaces you approved; to add more, run `lobu login` again, or `lobu context add <name> --url https://app.lobu.ai/api/v1` then `lobu login --context <name>`.
 
 ## Source
 
