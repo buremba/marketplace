@@ -1,7 +1,7 @@
 {
   "id": "lobu",
   "displayName": "Lobu",
-  "description": "See what needs you across your Lobu workspaces: pending approvals and due Automations, failed Automation and feed runs, connections and devices that need attention, the last 24 hours of activity, and pinned metrics. Ask an agent about any row from New thread. Requires the Lobu CLI, logged in.",
+  "description": "See what needs you across your Lobu workspaces (pending approvals, failed runs, unhealthy connections and devices, recent activity, pinned metrics) and save what your agents learn to Lobu memory after reviewing it. Requires the Lobu CLI, logged in.",
   "icon": {
     "url": "./icons/lobu-d54c7c7d.svg"
   },
@@ -11,7 +11,7 @@
     "approvals",
     "automations",
     "monitoring",
-    "metrics"
+    "memory"
   ],
   "author": {
     "name": "Lobu",
@@ -25,12 +25,13 @@
   "source": {
     "git": {
       "url": "https://github.com/lobu-ai/bb-plugin-lobu.git",
-      "range": "^0.1.2"
+      "range": "^0.2.1"
     }
   },
   "overview": "./overview/lobu.md",
   "screenshots": [
     "./screenshots/lobu/dashboard.jpg",
+    "./screenshots/lobu/save-to-lobu.jpg",
     "./screenshots/lobu/activity.jpg"
   ]
 }

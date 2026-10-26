@@ -10,9 +10,19 @@ A Lobu page in the bb sidebar with five cards, grouped by workspace:
 
 Every row links to Lobu. **Ask an agent** opens New thread with a prompt about the row; you pick the project and send. A one-line summary also appears on the New thread screen when something needs you.
 
+## Save to Lobu
+
+Agents forget everything when a thread ends. Save to Lobu keeps the useful parts in your Lobu workspace memory, where any agent connected to Lobu can find them later.
+
+- **The agent offers.** Agents get a `lobu_remember` tool and propose a few short memories when a task leaves something worth keeping.
+- **Save a message.** Hover a message, or highlight part of one, and choose **Save to Lobu**.
+- **Ask for a recap.** **Save learnings to Lobu** in the thread menu asks the agent what is worth keeping.
+
+Nothing is saved until you review it: a form replaces the message box so you can untick, edit, and pick the kind and workspace, then save or skip.
+
 ## How it reads Lobu
 
-The plugin reuses your `lobu` CLI login and makes one read-only `query_sdk` call per workspace. The summary is computed inside Lobu. Tokens stay in the bb server process, and the plugin never writes to Lobu.
+The plugin reuses your `lobu` CLI login and makes one read-only `query_sdk` call per workspace. The summary is computed inside Lobu. Tokens stay in the bb server process. The only write is Save to Lobu, which calls Lobu's `save_memory` for the memories you approve.
 
 ## Requirements
 
