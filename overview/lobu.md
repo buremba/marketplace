@@ -17,8 +17,9 @@ Agents forget everything when a thread ends. Save to Lobu keeps the useful parts
 - **The agent offers.** Agents get a `lobu_remember` tool and propose a few short memories when a task leaves something worth keeping.
 - **Save a message.** Hover a message, or highlight part of one, and choose **Save to Lobu**.
 - **Ask for a recap.** **Save learnings to Lobu** in the thread menu asks the agent what is worth keeping.
+- **Recap on archive.** Optionally, archiving a thread starts a hidden agent (you can pick a cheap model) that proposes memories from it. They wait in **Memories to review** on the Lobu page.
 
-Nothing is saved until you review it: a form replaces the message box so you can untick, edit, and pick the kind and workspace, then save or skip.
+Nothing is saved until you review it: a form, in place of the message box or on the Lobu page, lets you untick, edit, and pick the kind and workspace, then save or skip.
 
 ## How it reads Lobu
 
