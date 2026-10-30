@@ -1,37 +1,38 @@
 {
   "id": "lobu",
   "displayName": "Lobu",
-  "description": "See what needs you across your Lobu workspaces (pending approvals, failed runs, unhealthy connections and devices, recent activity, pinned metrics) and save what your agents learn to Lobu memory after reviewing it. Requires the Lobu CLI, logged in.",
+  "description": "Starts every thread with what earlier threads learned in your project and saves new learnings to Lobu memory. Agents search your personal workspace and a linked team workspace before working, supersede outdated memories in place, and run through native tools or bb lobu CLI commands across every agent provider. Each thread's Lobu memory panel shows what the agent started with, looked up, and saved, with undo, project pins, and one-click sharing to your team workspace. Built-in setup on the New thread screen installs the Lobu CLI via bun or npm and connects to a Lobu Cloud account or a local Lobu instance running on your machine.",
   "icon": {
     "url": "./icons/lobu-d54c7c7d.svg"
   },
   "tags": [
-    "lobu",
-    "dashboard",
-    "approvals",
-    "automations",
-    "monitoring",
-    "memory"
+    "memory",
+    "context",
+    "knowledge",
+    "project-brief",
+    "team-memory",
+    "recap",
+    "notes"
   ],
   "author": {
     "name": "Lobu",
     "github": "buremba",
     "url": "https://lobu.ai"
   },
-  "category": "tasks-and-workflows",
+  "category": "memory-and-context",
   "secondaryCategories": [
-    "notifications"
+    "thread-content"
   ],
   "source": {
     "git": {
       "url": "https://github.com/lobu-ai/bb-plugin-lobu.git",
-      "range": "^0.4.0"
+      "range": "^0.5.0"
     }
   },
   "overview": "./overview/lobu.md",
   "screenshots": [
-    "./screenshots/lobu/dashboard.jpg",
-    "./screenshots/lobu/save-to-lobu.jpg",
-    "./screenshots/lobu/activity.jpg"
+    "./screenshots/lobu/new-thread-memory.jpg",
+    "./screenshots/lobu/thread-memory-panel.jpg",
+    "./screenshots/lobu/save-to-lobu.jpg"
   ]
 }
